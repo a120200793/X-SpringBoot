@@ -149,4 +149,10 @@ X-SpringBoot
 - 本人QQ：913624256
 - 如果喜欢，记得star fork 谢谢您的关注 x-springboot会持续维护
 
+ **本地修改**
+ 
+ - 在dev分支修改。将来master分支用来从原fork仓库merge新代码。
+ - 修改多环境使用方式，方便idea分环境直接打包。
+
+
 
