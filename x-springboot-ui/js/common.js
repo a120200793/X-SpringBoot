@@ -43,6 +43,7 @@ $.ajaxSetup({
         console.log("====",data)
         if(data!=undefined){
             if(data.code === 401){
+                localStorage.removeItem("token");
                 parent.location.href = 'login.html';
             }else if(data.code === 0 && data.token){
                 localStorage.setItem("token", data.token);

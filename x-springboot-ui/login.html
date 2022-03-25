@@ -150,6 +150,8 @@
                         if(r.code == 0){//登录成功
                             parent.location.href ='index.html';
                         }else{
+                            //删除本地token
+                            localStorage.removeItem("token");
                             vm.error = true;
                             vm.errorMsg = r.msg;
                             vm.refreshCode();
